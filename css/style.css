@@ -1,0 +1,169 @@
+/* Reset dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            color: #000;
+        }
+
+        /* Container utama */
+        main {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        /* Section box putih */
+        section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Form */
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        input:focus {
+            border-color: #000;
+            outline: none;
+        }
+
+        /* Button umum */
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #000;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #333;
+        }
+
+        /* Action buttons */
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .action-buttons button {
+            width: 50%;
+        }
+
+        /* Todo header */
+        .todo-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .todo-count {
+            background: #ffffff;
+            border: 2px solid #e1e1e1;
+            border-radius: 8px;
+            color: rgb(0, 0, 0);
+            padding: 5px 10px;
+    
+        }
+
+        .current-datetime {
+            text-align: center;
+            padding: 15px;
+            background: #ffffff;
+            color: #000000;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border: 2px solid #000000;
+        }
+
+        /* Todo list */
+        #todo-list {
+            list-style: none;
+        }
+
+        #todo-list li {
+            background: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border: 2px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #todo-list li:hover {
+            border-color: #000;
+        }
+
+        #todo-list button {
+            width: auto;
+            padding: 8px 15px;
+            background: #000;
+        }
+
+        #todo-list button:hover {
+            background: #dc3545;
+        }
+
+        .todo-content p:first-child {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .todo-content p:nth-child(2) {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .todo-content p:last-child {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Empty state */
+        .empty-state {
+            text-align: center;
+            padding: 30px;
+            color: #999;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #999;
+        }

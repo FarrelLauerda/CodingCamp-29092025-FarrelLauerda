@@ -1,15 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do Farrel</title>
-    <!-- CSS Eksternal -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <title>Farrel - To Do</title>
 
-    <!-- Java Script Eksternal -->
-    <script src="script.js"></script>
-</body>
-</html>
+    <!-- CSS External -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>To Do</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Form Section -->
+        <section>
+            <form id="todo-form">
+                <div class="input-group">
+                    <input type="text" id="todo-input" placeholder="What needs to be done?" required autocomplete="off">
+                    <input type="date" id="todo-date" required>
+                    <input type="time" id="todo-time" required>
+                </div>
+                <button type="button" class="btn-add" onclick="addTodo()">
+                    Add Todo
+                </button>
+            </form>
+        </section>
+
+        <!-- Action Buttons -->
+        <section>
+            <div class="action-buttons">
+                <button class="btn-delete-all" onclick="deleteAllTodo()">
+                    Delete All
+                </button>
+                <button class="btn-filter" onclick="filterTodo()">
+                    Filter
+                </button>
+            </div>
+        </section>
+
+        <!-- Todo List -->
+        <section>
+            <div class="todo-header">
+                <h2>Your Tasks</h2>
+                <span class="todo-count" id="todo-count">0</span>
+                <!-- Current Date and Time -->
+                </div>
+                <div class="current-datetime" id="current-datetime">
+                    Loading...
+                </div>
+                
+            </div>
+            <ul id="todo-list">
+                <div class="empty-state">
+                    <p>No todos yet. Start adding some!</p>
+                </div>
+            </ul>
+        </section>
+    </main>
+
+
+
+    <!-- Footer -->
+     <footer>
+        <p>&copy; 2025 Farrel Todo</p>
+     </footer>
+
+    <!-- Java Script-->- 
+     <script src="js/script.js"></script>
